@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceren's Land</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS dosyası bağlantısı -->
+    <style>
+        /* Resetleme stilini uygula */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+            background: #112240;
+            color: #64ffda;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a192f;
+        }
+
+        header {
+            background-color: #0a192f;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #112240;
+            box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #3fb557;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            background-color: #112240;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Slayt için stiller */
+        .slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .project {
+            flex: 0 0 300px;
+            margin-right: 20px;
+            scroll-snap-align: start;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        /* GitHub linki için stil */
+        .github-link {
+            color: #64ffda; /* Bağlantı rengi */
+            text-decoration: none; /* Alt çizgiyi kaldırmak için */
+        }
+
+        .github-link:hover {
+            color: #3fb557; /* Fare üzerine gelindiğinde renk değişimi */
+        }
+
+        /* Menü stilleri */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #0a192f;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #64ffda;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            color: #3fb557;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ceren İşbilen</h1>
+        <p>Electronics & Communication Engineering Student</p>
+    </header>
+    <nav>
+        <a href="index.html">more about me</a>
+        <a href="eglence.html">cv</a>
+        <a href="contact.html">contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About me</h2>
+            <p>
+                Hi there:) 
+                I am a 3rd-year student in Electronics & Com. Engineering department.
+            During my uni years I have taken classes mostly based on PCB design, microcontrollers programming, and circuit analysis in my department. I have further trying to developing my skills in problem-solving(sereiously), included to a team work.
+            I am currently into learning AI. Learning image processing, embedded implementations and more about robotics.
+            </p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="experience">
+                <h3>Kocaeli University</h3>
+                <p>Bachelor's Degree - Electronics & Communications Engineering</p>
+                <p>Date: 2021 - 2025</p>
+            </div>
+            <!-- Diğer eğitim deneyimlerini buraya ekleyin -->
+        </section>
+        <section id="projects">
+            <h2>My recent projects</h2>
+            <div class="slider">
+                <div class="project">
+                    <h3>Color Analysis for Dental Ceramic</h3>
+                    <p>Review: This project is a software project that provides an colom comprasion betwween human eye and mobile phone cameras.</p>
+                    <a href="https://github.com/janelyd/Dental-Ceramic-Color-Analysis" class="github-link" target="_blank">Project GitHub Repository</a>
+                    <p>worked on this little guy &darr;&darr;&darr; </p>
+                    <img src="seramik.jpg" alt="Proje 1 Resmi">
+                </div>
+                <div class="project">
+                    <h3>Room Temperature Control System</h3>
+                    <p>Review: This project is an embedded system project that can measure the room temperature via analog sensor and gives the necessary feedback to 16x2 LCD. Based on the feedback of the temperature, a simple 5v fan will be included or if the room is so hot alert system will set up.</p>
+                    <a href="https://github.com/janelyd/Dental-Ceramic-Color-Analysis" class="github-link" target="_blank">Project GitHub Repository</a>
+                    <img src="msp430.jpg" alt="Proje 2 Resmi">
+                </div>
+                <div class="project">
+                    <h3>more projects will come as soon as possible :)</h3>
+                    <p>i keep learning</p>
+                </div>
+                <!-- Diğer projeleri buraya ekleyin -->
+            </div>
+        </section>
+        <section id="experiences">
+            <h2>Courses&Bootcamps</h2>
+            <div class="experience">
+                <h3>Akbank-Machine Learning Bootcamp</h3>
+                <br>
+                <h3>DeneyapKart Akademi T3 Vakfı</h3>
+                <br>
+                <h3>A. Elginkan Egitim Merkezi - C++ </h3>
+            </div>
+            <!-- Diğer deneyimleri buraya ekleyin -->
+        </section>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript dosyası bağlantısı -->
+</body>
+</html>
